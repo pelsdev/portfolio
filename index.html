@@ -3,18 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devops</title>
+    <title>Why Learn Devops</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta
+      name="keywords"
+      content="devops, learn devops, engineering with devops,"
+    />
+    <meta name="descripton" content="Article about Devops for beginners" />
+    <script>
+      function handleCreatePost() {
+        console.log("clicked on Create Post button");
+      }
+    </script>
   </head>
   <body>
-    <div id="header">
-      <div id="logo-search-contaier">
-        <img
-          id="logo"
-          src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-        />
-        <input type="text" placeholder="Search..." />
+    <div id="header-container">
+      <div id="header">
+        <div id="logo-search-contaier">
+          <img
+            id="logo"
+            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+          />
+          <input type="text" placeholder="Search..." />
+        </div>
+        <button onclick="handleCreatePost()">Create Post</button>
       </div>
-      <button>Log in</button>
     </div>
 
     <div id="main-section-container">
@@ -61,68 +76,9 @@
           >
         </div>
       </div>
-
-      <div></div>
     </div>
     <div id="footer">
       <p>This is the footer</p>
     </div>
   </body>
-  <style>
-    body {
-      background-color: #dde4e9;
-    }
-    a {
-      color: blue;
-      font-size: 10px;
-    }
-    div {
-      margin: 5px;
-    }
-    #logo {
-      width: 30px;
-    }
-    #article-cover {
-      width: 100%;
-    }
-    .article-info {
-      color: grey;
-    }
-    #main-section-container {
-      display: flex;
-      width: 80%;
-      margin: auto;
-    }
-    #header {
-      display: flex;
-      justify-content: space-between;
-      background-color: white;
-      height: 50px;
-    }
-    #logo-search-contaier {
-      display: flex;
-    }
-    #header input {
-      width: 250px;
-      margin-left: 10px;
-    }
-    #article-section {
-      width: 70%;
-      background-color: white;
-    }
-    #article-section div {
-      padding: 15px;
-    }
-    #side-section {
-      width: 30%;
-    }
-    #side-section div {
-      background-color: white;
-      padding: 15px;
-    }
-    #footer {
-      background-color: white;
-      height: 50px;
-    }
-  </style>
 </html>
