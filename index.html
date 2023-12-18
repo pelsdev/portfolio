@@ -1,40 +1,128 @@
-<body>
-    <div>
-        <b>Logo</b> 
-        <b>Name of website</b>
-        <button>Log in</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devops</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo-search-contaier">
+        <img
+          id="logo"
+          src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+        />
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button>Log in</button>
     </div>
 
-    <div>
+    <div id="main-section-container">
+      <div id="article-section">
+        <img id="article-cover" src="pelsimg.webp" />
         <div>
-           <h1>Article title</h1> 
-           <h3>Short info of the article</h3>
-          <p><i>Written by: Crocs Daniels</i></p>
-          <p><i>Date: 2022.05.23</i></p>
+          <h1>Article title</h1>
+          <h3>Short info of the article</h3>
+          <p class="article-info"><i>Written by: Crocs Daniels</i></p>
+          <p class="article-info"><i>Date: 2022.05.23</i></p>
         </div>
 
         <div>
-            <img src="pelsimg.webp" alt="">
-            <p>Paragraph 1</p>
-            <p>Paragraph 2</p>
-        
-        
-           <h4>Section header</h4>
-           <p>Paragraph 1</p> 
-            <ul>
-               <li>Item 1</li> 
-               <li>Item 2</li>
-               <li>Item 3</li>  
-            </ul>
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+
+          <h4>Section header</h4>
+          <p>Paragraph 1</p>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </div>
+      <div id="side-section">
+        <div>
+          <h2>Side section</h2>
+          <h3>Another article title</h3>
+          <h4>Another article short info</h4>
+          <a
+            href="https://dev.to/techworld_with_nana/top-5-reasons-to-choose-devops-as-a-career-5d6h"
+            >Click Here</a
+          >
         </div>
 
-    </div>
+        <div>
+          <h2>Also Side section</h2>
+          <h3>Another article title</h3>
+          <h4>short descripton</h4>
+          <a
+            href="https://dev.to/techworld_with_nana/top-5-reasons-to-choose-devops-as-a-career-5d6h"
+            >Click Here</a
+          >
+        </div>
+      </div>
 
-    <div>
-        <h2>Side section</h2>
-        <h3>Another article title</h3>
-        <h4>Another article short info</h4>
-        <a href="https://dev.to/techworld_with_nana/top-5-reasons-to-choose-devops-as-a-career-5d6h">Click Here</a>
+      <div></div>
     </div>
-
-</body>
+    <div id="footer">
+      <p>This is the footer</p>
+    </div>
+  </body>
+  <style>
+    body {
+      background-color: #dde4e9;
+    }
+    a {
+      color: blue;
+      font-size: 10px;
+    }
+    div {
+      margin: 5px;
+    }
+    #logo {
+      width: 30px;
+    }
+    #article-cover {
+      width: 100%;
+    }
+    .article-info {
+      color: grey;
+    }
+    #main-section-container {
+      display: flex;
+      width: 80%;
+      margin: auto;
+    }
+    #header {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      height: 50px;
+    }
+    #logo-search-contaier {
+      display: flex;
+    }
+    #header input {
+      width: 250px;
+      margin-left: 10px;
+    }
+    #article-section {
+      width: 70%;
+      background-color: white;
+    }
+    #article-section div {
+      padding: 15px;
+    }
+    #side-section {
+      width: 30%;
+    }
+    #side-section div {
+      background-color: white;
+      padding: 15px;
+    }
+    #footer {
+      background-color: white;
+      height: 50px;
+    }
+  </style>
+</html>
