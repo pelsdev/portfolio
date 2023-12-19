@@ -12,11 +12,7 @@
       content="devops, learn devops, engineering with devops,"
     />
     <meta name="descripton" content="Article about Devops for beginners" />
-    <script>
-      function handleCreatePost() {
-        console.log("clicked on Create Post button");
-      }
-    </script>
+    <script src="app.js"></script>
   </head>
   <body>
     <div id="header-container">
@@ -31,7 +27,18 @@
         <button onclick="handleCreatePost()">Create Post</button>
       </div>
     </div>
-
+    <div id="post-form-container">
+      <form>
+        <label><b>Title</b></label>
+        <input type="text" placeholder="Enter title" required />
+        <label><b>Descripton</b></label>
+        <input type="text" placeholder="Enter descripton" />
+        <label><b>Post</b></label>
+        <textarea placeholder="Your post..."></textarea>
+        <button id="hide-button" onclick="hidePostForm()">Hide form</button>
+        <button id="save-button">save form</button>
+      </form>
+    </div>
     <div id="main-section-container">
       <div id="article-section">
         <img id="article-cover" src="pelsimg.webp" />

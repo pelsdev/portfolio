@@ -54,6 +54,15 @@
       border-radius: 5px;
       background-color: white;
     }
+    #hide-button{
+      color: darkred;
+      border: 1px solid darkred;
+
+    }
+    #save-button{
+      color: darkcyan;
+      border: 1px solid darkcyan;
+    }
     #article-section {
       width: 70%;
       background-color: white;
@@ -79,4 +88,15 @@
 button:hover{
     cursor: pointer;
     
+}
+#post-form-container{
+   max-width: 300px;
+   padding: 10px;
+   margin: auto;
+   display: none;
+}
+#post-form-container input, textarea{
+  width: 100%;
+  margin: 5px 0px 20px 0px;
+  padding: 10px;
 }
