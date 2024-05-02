@@ -100,3 +100,12 @@ button:hover{
   margin: 5px 0px 20px 0px;
   padding: 10px;
 }
+#flo {
+  background-color: blue;
+  color: white;
+  width: 100%;
+}
+#flo:hover {
+  cursor: pointer;
+  filter: blur(1px);
+}
